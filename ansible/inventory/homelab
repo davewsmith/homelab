@@ -1,0 +1,30 @@
+# fmt: ini
+
+[pinot]
+100.118.142.57
+
+[pis]
+
+[pis:vars]
+ansible_user=pi
+
+[pis:children]
+pi3
+pi4
+pigsty
+pixie
+
+[pi3]
+100.124.154.64 noreboot=1
+
+[pi4]
+100.79.242.27
+
+[picam]
+100.79.170.128
+
+[pigsty]
+100.77.12.26
+
+[pixie]
+100.82.0.46
