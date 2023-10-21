@@ -19,9 +19,9 @@ Ansible runs from a virtual environment.
     pip install --upgrade pip  # just in case
     venv/bin/pip install ansible
 
-## Setup
+## Per-use Setup
 
-Everything in [ansible/README.md](Ansible) requires an activated virtual environment.
+Everything in `ansible/` requires an activated virtual environment.
 
     . venv/bin/activate
 
