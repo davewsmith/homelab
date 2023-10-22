@@ -16,10 +16,10 @@
 
     - name: Reboot if required
       reboot:
+        msg: "Reboot is required"
       when: reboot_required_file.stat.exists == true
 
     - name: Announce if we've rebooted
       debug:
         msg: "Rebooted"
       when: reboot_required_file.stat.exists == true
-      
