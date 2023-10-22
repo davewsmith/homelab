@@ -11,6 +11,7 @@ Verify that nodes are, and show free disk space
 where NODE is either `all` or some node in the inventory.
 
 
-## Upgrades
+## Upgrade Pinot
 
-TODO
+    ansible-playbook -i inventory/pinot playbooks/upgrade.yml --ask-become-pass
+

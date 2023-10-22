@@ -1,0 +1,25 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+    - name: Apt upgrade safely
+      apt:
+        update_cache: true
+        cache_valid_time: 3600
+        upgrade: "safe"
+
+    - name: Check if reboot is required
+      stat:
+        path: /home/run/reboot-required
+      register: reboot_required_file
+
+    - name: Reboot if required
+      reboot:
+      when: reboot_required_file.stat.exists == true
+
+    - name: Announce if we've rebooted
+      debug:
+        msg: "Rebooted"
+      when: reboot_required_file.stat.exists == true
+      
