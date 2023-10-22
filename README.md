@@ -1,4 +1,4 @@
-# us-west-Π
+# us-west-π
 
 Configuration/deployment scripts for my rolling disaster of a homelab.
 
