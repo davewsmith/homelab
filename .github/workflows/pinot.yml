@@ -15,8 +15,8 @@ jobs:
           oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
           oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
           tags: tag:ci
-          version: 1.52.0
+          version: 1.60.0
 
-      - name: Checkout my tailnet
+      - name: Check out my tailnet
         run: |
             tailscale status
