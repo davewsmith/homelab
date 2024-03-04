@@ -15,7 +15,6 @@ jobs:
           oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
           oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
           hostname: pinot
-          tags: tag:pinot
           version: 1.52.0
 
       - name: Checkout my tailnet
