@@ -12,6 +12,7 @@ ansible_user=pi
 pi3
 pi4
 pigsty
+pilot
 pixie
 
 [pi3]
@@ -25,6 +26,9 @@ pixie
 
 [pigsty]
 100.77.12.26
+
+[pilot]
+100.83.6.82
 
 [pixie]
 100.82.0.46
